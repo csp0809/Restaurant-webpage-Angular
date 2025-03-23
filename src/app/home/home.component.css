@@ -1,0 +1,42 @@
+body{
+  font-family: sans-serif;
+    font-size: 25px;
+    padding-top: 30px;
+}
+.carousel-inner img {
+    width: 100%; /* Set width to 100% */
+    margin: auto;
+    min-height:200px;
+    max-height: 500px; /* Limit height on larger screens */
+  object-fit: cover;
+}
+.title{
+  color: aliceblue;
+}
+
+.row{
+  padding-bottom: 20px;
+}
+
+@media (max-width: 768px) {
+  .carousel-inner img .imageQ {
+    min-height: 150px;
+    max-height: 300px;
+  }
+
+  body {
+    font-size: 20px; /* Adjust font size for smaller screens */
+  }
+}
+
+/*Media Query for Small Screens (Mobile Devices) */
+@media (width< 480px) {
+  .carousel-inner img .imageQ {
+    min-height: 120px;
+    max-height: 250px;
+  }
+
+  body {
+    font-size: 18px; /* Further reduce font size */
+  }
+}

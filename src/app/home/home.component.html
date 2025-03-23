@@ -1,0 +1,80 @@
+<!-- Bootstrap 5 Carousel -->
+<div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+  <!-- Indicators -->
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true"></button>
+    <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1"></button>
+  </div>
+
+  <!-- Wrapper for slides -->
+  <div class="carousel-inner" style="border-radius: 10px; height: 500px;"> <!-- Set a fixed height -->
+    <div class="carousel-item active">
+      <img src="/assets/pexels-pixabay-262978.jpg" class="d-block w-100 carousel-img" alt="Image">
+    </div>
+
+    <div class="carousel-item">
+      <img src="/assets/pexels-pixabay-460537.jpg" class="d-block w-100 carousel-img" alt="Image">
+    </div>
+  </div>
+
+  <!-- Left and right controls -->
+  <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+
+<!-- Main Content -->
+<div class="title container text-center mt-4">
+  <h3><span class="icon">🍽️</span> Welcome to <strong>Delight Bites !!!</strong></h3><br>
+
+  <div class="row">
+    <div class="col-sm-4 imageQ">
+      <img src="/assets/pexels-fotios-photos-1126728.jpg" class="img-fluid rounded" style="width:86%" alt="Image">
+    </div>
+    <div class="col-sm-4">
+      <img src="/assets/pexels-chanwalrus-941861.jpg" class="img-fluid rounded" style="width:100%" alt="Image">
+    </div>
+    <div class="col-sm-4 imageQ">
+      <div class="alert alert-primary">
+        <p>OFFER FOR FAMILIES!!!</p>
+      </div>
+      <div class="alert alert-danger">
+        <p>50% OFF</p>
+      </div>
+    </div>
+  </div>
+  <!-- <div class="row">
+    <div class="col-sm-4">
+      <img src="/assets/pexels-fotios-photos-1126728.jpg" class="img-fluid rounded" style="width:86%" alt="Image">
+    </div>
+    <div class="col-sm-4">
+      <img src="/assets/pexels-chanwalrus-941861.jpg" class="img-fluid rounded" style="width:100%" alt="Image">
+    </div>
+    <div class="col-sm-4">
+      <div class="alert alert-primary">
+        <p>OFFER FOR FAMILIES!!!</p>
+      </div>
+      <div class="alert alert-danger">
+        <p>50% OFF</p>
+      </div>
+    </div>
+  </div> -->
+</div>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+<!-- Custom CSS -->
+<style>
+  .carousel-img {
+    height: 500px;
+    /* Set a fixed height */
+    object-fit: cover;
+    /* Ensures images fit without distortion */
+  }
+</style>

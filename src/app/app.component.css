@@ -1,0 +1,35 @@
+html, body {
+    
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+.navbar, .footer {
+    width: 100%;
+    left: 0;
+}
+.navbar {
+    position: fixed;
+    top: 0;
+    background-color: #343a40;
+    color: white;
+    padding: 10px 0;
+    z-index: 1000; /* Ensures it stays above other content */
+}
+.container {
+    flex: 1; /* Push the footer to the bottom */
+    display: flex;
+    flex-direction: column;
+    padding-top: 60px; /* Offset for fixed navbar */
+}
+
+.footer {
+    position: fixed;
+    bottom: 0;
+    background-color: #343a40;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    width: 100%;
+}

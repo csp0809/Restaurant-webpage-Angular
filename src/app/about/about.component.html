@@ -1,0 +1,87 @@
+
+<!-- About Us Section -->
+<section class="about-section" >
+    <div class="container">
+        <h2>Welcome to <strong>Delight Bites</strong></h2>
+        <p class="lead">Where passion meets flavor!</p>
+    </div>
+
+
+<div class="container my-5 " >
+    <div class="row justify-content-center">
+        <!-- <div class="col-md-10">
+            <div class="col col-md-4 offset-md-4">
+            <a class="btn btn-primary" [routerLink]="['create']">create</a>
+        </div> -->
+
+        <table class="table table-hover"
+    style="width: 65vw; background-color: transparent; border-collapse: separate; border-spacing: 0; border-radius: 10px; overflow: hidden;">
+    <thead style="background-color: rgba(255, 255, 255, 0.1); border-radius: 10px;">
+        <tr style="border-bottom: 2px solid rgba(255, 255, 255, 0.2);">
+            <th scope="col" class="p-3 text-center align-middle"> Id</th>
+            <th scope="col" class="p-3 text-center align-middle">Name</th>
+            <th scope="col" class="p-3 text-center align-middle">Price</th>
+            <th scope="col" class="p-3 text-center align-middle">Quantity</th>
+            <th scope="col" class="p-3 text-center align-middle" >Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let i of allOrders"
+            style="border-bottom: 1px solid rgba(255, 255, 255, 0.2); transition: all 0.3s ease;">
+            <th scope="row" class="p-3 text-center align-middle">{{i.id}}</th>
+            <td class="p-3 text-center align-middle">{{i.name}}</td>
+            <td class="p-3 text-center align-middle">{{i.price}}</td>
+            <td class="p-3 text-center align-middle">{{i.quantity}}</td>
+            <td class="p-3 text-center align-middle">
+                <a class="btn btn-primary btn-sm" [routerLink]="['/edit', i.id]">Edit</a>
+                <button type="button" class="btn btn-danger btn-sm ms-2" (click)="delete(i.id)">Delete</button>
+            </td>
+        </tr>
+    </tbody>
+</table>  
+    </div>
+    <button class="btn btn-danger" (click)="logout()">Logout</button>
+
+ </div>
+</section>
+<router-outlet></router-outlet>
+
+
+ 
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+
+<!-- <div class="about-content">
+                <h3>Our Story</h3>
+                <p>Founded in 2015, <strong>Delight Bites</strong> began as a dream to create a space where food brings people together. From our humble beginnings, we’ve grown into a beloved destination for food lovers, offering a warm and inviting atmosphere for families, friends, and food enthusiasts.</p>
+
+                <h3 class="mt-4">Our Philosophy</h3>
+                <div class="row">
+                    <div class="col-md-4">
+                        <span class="icon">🍽️</span>
+                        <h5>Fresh Ingredients</h5>
+                        <p>Every dish is crafted using locally sourced and high-quality ingredients.</p>
+                    </div>
+                    <div class="col-md-4">
+                        <span class="icon">🔥</span>
+                        <h5>Authentic Flavors</h5>
+                        <p>A perfect blend of traditional recipes and contemporary twists.</p>
+                    </div>
+                    <div class="col-md-4">
+                        <span class="icon">💖</span>
+                        <h5>Exceptional Service</h5>
+                        <p>Hospitality that makes you feel right at home.</p>
+                    </div>
+                </div>
+
+                <h3 class="mt-4">Come Dine With Us!</h3>
+                <p>Whether you're craving a hearty meal, a romantic dinner, or just a cozy spot to enjoy a cup of coffee, we welcome you with open arms.</p>
+
+                <p class="mt-4">
+                    📍 <strong>Location:</strong> 123 Main Street, Your City <br>
+                    📞 <strong>Contact Us:</strong> +123 456 7890 <br>
+                    🌐 <strong>Visit Us Online:</strong> <a href="#">www.delightbites.com</a>
+                </p>
+            </div>
+        </div> -->
