@@ -1,25 +1,25 @@
 <section class="about-section">
-<form  class="container mt-4 w-50 p-4 " >
+<form  class="container mt-4 w-50 p-4 "  >
     <h3 class="text-center mb-4">Contact Form</h3>
 
     <div class="mb-3">
         <label for="name" class="form-label">Enter Name</label>
-        <input type="text" class="form-control" id="name" name="name" placeholder="Enter Name" ngModel required>
+        <input type="text" class="form-control" id="name" name="name" placeholder="Enter Name" [(ngModel)]="contact.name"  required>
     </div>
     
     <div class="mb-3">
         <label for="email" class="form-label">Enter Email</label>
-        <input type="text" class="form-control" id="email" name="email" placeholder="Enter Email" ngModel required>
+        <input type="text" class="form-control" id="email" name="email" placeholder="Enter Email" [(ngModel)]="contact.email" required>
     </div>
 
     <div class="mb-3">
         <label for="message" class="form-label ">Query/ Message</label>
-        <textarea class="form-control" id="message" name="message" placeholder="Enter Query/ Message" ngModel required rows="4"></textarea>
+        <textarea class="form-control" id="message" name="message" placeholder="Enter Query/ Message" [(ngModel)]="contact.message" required rows="4"></textarea>
 
     </div>
     <br>
     <div class="text-center">
-        <button type="submit" class="btn btn-primary ">Submit</button>
+        <button type="submit" (click)="onSubmit()" class="btn btn-primary ">Submit</button>
     </div>
 
 </form>
